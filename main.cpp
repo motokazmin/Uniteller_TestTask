@@ -24,8 +24,9 @@ int main(int argc, char** argv) {
         return 0;
     }
 
+    const int num_groupsInSec = 10;
     UnitelTranslator<int> tr;
-    IdentifierSequence<int> is(4);
+    IdentifierSequence<int> is(num_groupsInSec);
     IncProcessor seqp(tr.GetGroupCapacity());
 
     is.setProcessor(&seqp);
