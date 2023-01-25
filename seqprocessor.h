@@ -8,7 +8,11 @@ template <typename T> class IdentifierSequence;
 /*
     Базовый класс Логики добавления нового идентификатора
 */
-class Processor {};
+class Processor
+{
+public:
+    template<class T> int update(IdentifierSequence<T>& seq) {return 0;}
+};
 
 /*
     Класс Логики последовательного инкремента идентификатора группы.
